@@ -91,11 +91,11 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the yaml file to ~/elk/elk-docker.yaml.
 - Update the /etc/ansible/hosts file to include an Elk group 
-- Run the playbook, and navigate to http://<external ip of elk-docker>:5601 to check that the installation worked as expected.
+- Run the playbook, and navigate to http://\<external ip of elk-docker\>:5601 to check that the installation worked as expected.
 
 - The Playbook is elk-docker.yaml.
 - Open /etc/ansible/hosts and create a group named elk that contains the ip of your target elk VM. This will ensure only your new VM will be the target of our new deployment. 
 - Run ansible-playbook elk-docker.yaml to deploy the playbook to our VM.
-- Navigate to http://<external ip of elk-docker>:5601 to see our Kibana deployment.
+- Navigate to http://\<external ip of elk-docker\>:5601 to see our Kibana deployment.
 
 
